@@ -12,7 +12,8 @@ pool:
 steps:
 - task: Docker@2
   inputs:
-    containerRegistry: 'brmclareTestDockerHub'
+    containerRegistry: 'ACCServicesImagesConnection'
     repository: 'sgx-test'
     command: 'buildAndPush'
-    Dockerfile: 'k8s-sgxtest/Dockerfile'
+    Dockerfile: 'Dockerfile'
+    buildContext: 'k8s-sgxtest/'
