@@ -15,5 +15,4 @@ steps:
     containerRegistry: 'ACCServicesImagesConnection'
     repository: 'sgx-test'
     command: 'buildAndPush'
-    Dockerfile: 'Dockerfile'
-    buildContext: 'k8s-sgxtest/'
+    Dockerfile: 'k8s-sgxtest/Dockerfile'
