@@ -17,5 +17,5 @@ steps:
     command: 'buildAndPush'
     Dockerfile: 'k8s-sgxtest/Dockerfile'
     tags:
-      1.0
+      1.0 /
       latest
