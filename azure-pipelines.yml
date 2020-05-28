@@ -16,6 +16,6 @@ steps:
     repository: 'sgx-test'
     command: 'buildAndPush'
     Dockerfile: 'k8s-sgxtest/Dockerfile'
-    tags: |
+    tags:
       1.0
-      latest'
+      latest
