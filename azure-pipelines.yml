@@ -3,16 +3,13 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
-
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
 - task: Docker@2
   inputs:
-    containerRegistry: 'oeciteamDockerHub'
+    containerRegistry: 'ACCServicesImagesConnection'
     repository: 'sgx-test'
     command: 'buildAndPush'
     Dockerfile: 'k8s-sgxtest/Dockerfile'
