@@ -14,7 +14,7 @@ pool:
 steps:
 - task: Docker@2
   inputs:
-    containerRegistry: 'ACCServicesImagesConnection'
+    containerRegistry: 'oeciteamDockerHub'
     repository: 'sgx-test'
     command: 'buildAndPush'
     Dockerfile: 'k8s-sgxtest/Dockerfile'
